@@ -22,4 +22,7 @@ def run():
     data = request.json
     return jsonify({"result": f"khdam m3a {data['username']}"})
 
-app.run()
+
+# 👇 هادي المهمة
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
